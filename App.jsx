@@ -18,7 +18,7 @@ function App() {
   const getStockPrice = async (symbol) => {
     try {
       const response = await axios.get(
-        https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${API_KEY}
+        https //www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${API_KEY}
       );
       return parseFloat(response.data["Global Quote"]["05. price"]);
     } catch (error) {
